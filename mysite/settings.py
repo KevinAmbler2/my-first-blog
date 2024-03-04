@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-v+g88!im3hys5e7xz-k$o+()fx9soopxq7q@ky+yv5j=t9344%'
+SECRET_KEY = 'django-insecure-wwn5e0$a&jpz@e9tysf%*2(4$ub0hu6p*vmlo2%x&pz=t8poxx'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -104,9 +104,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'en-ch'
 
-TIME_ZONE = 'America/Indiana/Indianapolis'
+TIME_ZONE = 'Europe/Berlin'
 
 USE_I18N = True
 
@@ -125,5 +125,6 @@ STATIC_ROOT = BASE_DIR / 'static'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
-#STATICFILES_DIRS = [BASE_DIR / 'static']
+LOGIN_REDIRECT_URL = '/'
